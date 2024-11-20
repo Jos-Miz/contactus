@@ -43,47 +43,46 @@
             text-decoration: underline;
         }
 
-        /* About Us Section */
-        .about-section {
+        /* Contact Us Section */
+        .contact-section {
             background-image: url('bg_1.jpeg');
             background-position: center;
             color: black;
             text-align: center;
             padding: 80px 20px;
         }
-        .about-section h1 {
+        .contact-section h1 {
             font-size: 48px;
             margin-bottom: 20px;
         }
-        .about-section p {
+        .contact-section p {
             font-size: 20px;
             max-width: 800px;
             margin: 0 auto;
         }
 
 
-        /* Team Section */
-        .team-section {
+        /* Info Section */
+        .info-section {
             text-align: center;
             padding: 50px 20px;
             background-color: #e8e8e8;
-          
         }
-        .team-section h2 {
+        .info-section h2 {
             font-size: 36px;
             margin-bottom: 20px;
-          margin-top: 10px;
+            margin-top: 10px;
         }
-      
-        .team {
+
+        .info {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
             margin-top: 30px;
-      }
-          
-          .team-member {
+        }
+
+        .info-box {
             background: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -92,30 +91,24 @@
             text-align: center;
         }
 
-        .team-member h3 {
+        .info-box h3 {
             font-size: 24px;
             margin-bottom: 10px;
             color: #3A4528; /* Use a greenish tone for headings */
         }
 
-        .team-member p {
+        .info-box p {
             font-size: 16px; /* Increase font size */
             margin-bottom: 10px;
             color: #555; /* Softer color for text */
         }
-      
-      
-      .section-image {
-    width: 100px; /* Set the desired width (e.g., 100px) */
-    height: auto; /* Automatically adjust height to maintain aspect ratio */
-    margin-bottom: 15px; /* Add spacing below the image */
-    border-radius: 10px; /* Optional: Add rounded corners for styling */
-}
-      
-      
 
-
-
+        .section-image {
+            width: 100px; /* Set the desired width (e.g., 100px) */
+            height: auto; /* Automatically adjust height to maintain aspect ratio */
+            margin-bottom: 15px; /* Add spacing below the image */
+            border-radius: 10px; /* Optional: Add rounded corners for styling */
+        }
     </style>
 </head>
 <body>
@@ -129,85 +122,34 @@
         </ul>
     </nav>
 
-    <div class="about-section">
+    <div class="contact-section">
         <h1> Contact Us </h1>
         <p> We’d love to hear from you! Whether you have questions, feedback, or need support, feel free to get in touch. We also do custom orders! Feel free to fill out the form below if you're interested. </p>
     </div>
 
- <div class="team-section">
-    <div class="team">
-      
-      
-      
-      
-        <div class="team-member">
-          
-            <img src="house.jpeg" alt="Call Us Image" class="section-image">
-        
-          <h3> Visit Us </h3>
-          
-           <p> Stop by our garden to explore our floral selection in person. We’d love to see you. </p>
-          
-            <p> 123 Bloom Street, Floraltown, ON </p>
-          
-          
-          
-        </div>
-      
-      
-      
-      
-        <div class="team-member">
- 
-        
-            <img src="phone.jpeg" alt="Call Us Image" class="section-image">
-          
-            <h3> Call Us </h3>
+    <div class="info-section">
+        <div class="info">
+            <div class="info-box">
+                <img src="house.jpeg" alt="Visit Us Image" class="section-image">
+                <h3> Visit Us </h3>
+                <p> Stop by our garden to explore our floral selection in person. We’d love to see you. </p>
+                <p> 123 Bloom Street, Floraltown, ON </p>
+            </div>
 
-          
-           <p> Feel free to give us a call for any inquiries or assistance. We're here to help! </p>
-          
-            <p> +91 998 877 6655 </p>
-          
-        </div>
-      
-      
-      
-        <div class="team-member">
-          
-            <img src="email.jpeg" alt="Call Us Image" class="section-image">
-          
-            <h3> Email Us </h3>
-          
-           <p> We would be happy to hear from you! PLease contact us through our email. </p>
-          
-            <p> enhanced.florals@gmail.com</p>
-        </div>
-      
-      
-      
-        <div class="team-member">
- <h2>HTML Forms</h2>
+            <div class="info-box">
+                <img src="phone.jpeg" alt="Call Us Image" class="section-image">
+                <h3> Call Us </h3>
+                <p> Feel free to give us a call for any inquiries or assistance. We're here to help! </p>
+                <p> +91 998 877 6655 </p>
+            </div>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="Name"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Last"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-          
-          
-          
+            <div class="info-box">
+                <img src="email.jpeg" alt="Email Us Image" class="section-image">
+                <h3> Email Us </h3>
+                <p> We would be happy to hear from you! Please contact us through our email. </p>
+                <p> enhanced.florals@gmail.com</p>
+            </div>
         </div>
-      
-             
-
-      
     </div>
-</div>
-
-  </body>
+</body>
 </html>
